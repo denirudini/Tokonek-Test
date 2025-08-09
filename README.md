@@ -41,7 +41,7 @@ Project ini merupakan suite otomatisasi pengujian berbasis Selenium dan TestNG u
 
 - Test login: [`AuthenticationTest`](src/test/java/com/tokonek/AuthenticationTest.java)
 - Test organisasi: [`OrganizationsTest`](src/test/java/com/tokonek/organization/OrganizationsTest.java), [`AddOrganizationsTest`](src/test/java/com/tokonek/organization/AddOrganizationsTest.java), [`ChoseOrganizationsTest`](src/test/java/com/tokonek/organization/ChoseOrganizationsTest.java)
-- Test kategori & inventori: [`CategoryTest`](src/test/java/com/tokonek/dashboard/CategoryTest.java), [`inventoryTest`](src/test/java/com/tokonek/dashboard/inventoryTest.java)
+- Test kategori & Produk: [`ProductTest`](src/test/java/com/tokonek/dashboard/CategoryTest.java), [`ProductTest`](src/test/java/com/tokonek/dashboard/ProductTest.java)
 
 ## 👤 Author
 
@@ -50,3 +50,4 @@ Project ini merupakan suite otomatisasi pengujian berbasis Selenium dan TestNG u
 ---
 
 Untuk pertanyaan lebih lanjut, silakan kontak
+
