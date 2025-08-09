@@ -1,8 +1,8 @@
-# ToKonek Automated Testing
+# 🚀 ToKonek Automated Testing
 
 Project ini merupakan suite otomatisasi pengujian berbasis Selenium dan TestNG untuk aplikasi web dashboard Tokonek.
 
-## Struktur Project
+## 📁 Struktur Project
 
 - `src/main/java/`  
   Berisi kode utama (Page Object, utilitas).
@@ -13,13 +13,13 @@ Project ini merupakan suite otomatisasi pengujian berbasis Selenium dan TestNG u
 - `target/`  
   Berisi hasil build, report, dan screenshot.
 
-## Teknologi
+## 🛠️ Teknologi
 
 - **Selenium WebDriver**: Automasi browser.
 - **TestNG**: Framework pengujian.
 - **ExtentReports**: Laporan hasil tes otomatis.
 
-## Cara Menjalankan Tes
+## ▶️ Cara Menjalankan Tes
 
 1. Pastikan sudah terinstall Java dan Maven.
 2. Jalankan perintah berikut di root project:
@@ -32,21 +32,21 @@ Project ini merupakan suite otomatisasi pengujian berbasis Selenium dan TestNG u
    - `target/ExtentReport.html`
    - `target/surefire-reports/`
 
-## Konfigurasi
+## ⚙️ Konfigurasi
 
 - Konfigurasi test suite ada di [`src/test/resources/testng.xml`](src/test/resources/testng.xml).
 - Konfigurasi ExtentReport di [`src/test/resources/extent.properties`](src/test/resources/extent.properties).
 
-## Struktur Test
+## 🧪 Struktur Test
 
 - Test login: [`AuthenticationTest`](src/test/java/com/tokonek/AuthenticationTest.java)
 - Test organisasi: [`OrganizationsTest`](src/test/java/com/tokonek/organization/OrganizationsTest.java), [`AddOrganizationsTest`](src/test/java/com/tokonek/organization/AddOrganizationsTest.java), [`ChoseOrganizationsTest`](src/test/java/com/tokonek/organization/ChoseOrganizationsTest.java)
 - Test kategori & inventori: [`CategoryTest`](src/test/java/com/tokonek/dashboard/CategoryTest.java), [`inventoryTest`](src/test/java/com/tokonek/dashboard/inventoryTest.java)
 
-## Author
+## 👤 Author
 
 - QA Engineer: Deni Rudini
 
 ---
 
-Untuk pertanyaan lebih lanjut, silakan kontak tim QA.
+Untuk pertanyaan lebih lanjut, silakan kontak
