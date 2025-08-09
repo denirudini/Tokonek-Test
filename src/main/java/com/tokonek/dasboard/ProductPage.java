@@ -6,13 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class InventoryPage {
+public class ProductPage {
     private WebDriver driver;
     private By inventoryButton = By.xpath("//span[normalize-space()='Inventory']");
     private By addProductButton = By.xpath("//a[normalize-space()='Tambah Produk']");
     private By fieldNameProduct = By.xpath("//input[@id='name']");
     private By fieldSKUProduct = By.xpath("//input[@id='sku']");
-    private By fieldCategory = By.xpath("//select[@id='category']");
+    private By fieldCategory = By.xpath("//div[@class='flex items-center justify-between']");
     private By fieldDescriptionProduct = By.xpath("//textarea[@id='description']");
     private By fieldPriceProduct = By.xpath("//input[@id='price']");
     private By fieldStockProduct = By.xpath("//input[@id='stock']");
@@ -20,7 +20,13 @@ public class InventoryPage {
     private By fieldImageProduct = By.xpath("(//span[@class='bg-primary-50 text-primary-600 hover:bg-primary-100 rounded-md px-3 py-2 text-sm font-medium'])[1]");
     private By buttonSaveProduct = By.xpath("//button[normalize-space()='Simpan Produk']");
 
-    public InventoryPage(WebDriver driver) {
+    private By categoryDropdown = By.xpath("//div[@class='flex items-center justify-between']");
+    private By categoryChose = By.xpath("//button[contains(text(),'Fashion Pria')]");
+    private By categoryChoseNext = By.xpath("//button[normalize-space()='Baju muslim']");
+
+    private By fieldBarcode = By.xpath("//input[@id='barcode']");
+
+    public ProductPage(WebDriver driver) {
         this.driver = driver;
     }
     public void clickMenuInventory(){
@@ -58,4 +64,18 @@ public class InventoryPage {
     public void buttonSaveProduct(){
         driver.findElement(buttonSaveProduct).click();
     }
+    public void categoryDropdown(){
+        driver.findElement(categoryDropdown).click();
+    }
+    public void categoryChose(){
+        driver.findElement(categoryChose).click();
+    }
+    public void categoryChoseNext(){
+        driver.findElement(categoryChoseNext).click();
+    }
+    public void fieldBarcode(String barcode){
+        driver.findElement(fieldBarcode).sendKeys(barcode);
+    }
+
+
 }

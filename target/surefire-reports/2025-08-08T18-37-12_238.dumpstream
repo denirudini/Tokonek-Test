@@ -1,4 +1,4 @@
-# Created at 2025-08-07T15:10:24.912
+# Created at 2025-08-08T18:37:12.409
 Boot Manifest-JAR contains absolute paths in classpath 'E:\Practice Selenium\ToKonek\com.tokonek\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

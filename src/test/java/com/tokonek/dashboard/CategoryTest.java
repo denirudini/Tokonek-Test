@@ -1,16 +1,17 @@
 package com.tokonek.dashboard;
 
+import org.apache.poi.xssf.model.ThemesTable;
 import org.testng.annotations.Test;
 
 import com.tokonek.BaseTest;
 import com.tokonek.OrganizationsPage;
 import com.tokonek.dasboard.CategoryPage;
-import com.tokonek.dasboard.InventoryPage;
+import com.tokonek.dasboard.ProductPage;
 import com.tokonek.utils.DriverUtil;
 
 public class CategoryTest extends BaseTest {
     private OrganizationsPage organizationsPage;
-    private InventoryPage inventory;
+    private ProductPage inventory;
     private CategoryPage category;
 
      @Test( priority = 1)
@@ -23,7 +24,7 @@ public class CategoryTest extends BaseTest {
 
     @Test( priority = 2)
     public void catalogueCategory() throws InterruptedException{
-        inventory = new InventoryPage(DriverUtil.getDriver());
+        inventory = new ProductPage(DriverUtil.getDriver());
         inventory.clickMenuInventory();
         Thread.sleep(1000);
         category = new CategoryPage(DriverUtil.getDriver());
@@ -32,21 +33,20 @@ public class CategoryTest extends BaseTest {
     }
 
     @Test(priority = 3)
-    public void addCategory() throws InterruptedException{
+    public void addCategorySub() throws InterruptedException{
         category = new CategoryPage(DriverUtil.getDriver());
         category.addCategory();
         Thread.sleep(1000); 
-        category.nameCategory("Oversize");
+        category.nameCategory("Hijab");
         Thread.sleep(1000);
         category.typeCategorySub();
         Thread.sleep(1000);
-        category.selectCategorySub();
+        category.categoryDropdown();
         Thread.sleep(1000);
-        category.choseCategory();
+        category.choseCategorySub();
         Thread.sleep(1000);
         category.saveCategory();
         Thread.sleep(1000);
-
     }
 
 

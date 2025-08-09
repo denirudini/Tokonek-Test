@@ -21,7 +21,7 @@
             <!-- test untuk halaman create Organizations untuk akun pertama kali 
             <class name="com.tokonek.organization.CreateOrganizationsTest"></class> -->
 
-            <!-- <class name = "com.tokonek.dashboard.inventoryTest"></class> -->
+            <!-- <class name = "com.tokonek.dashboard.ProductTest"></class> -->
 
             <class name = "com.tokonek.dashboard.CategoryTest"></class>
         </classes>       

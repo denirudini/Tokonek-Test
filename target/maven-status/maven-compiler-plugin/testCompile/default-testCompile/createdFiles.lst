@@ -2,8 +2,8 @@ com\tokonek\AuthenticationTest.class
 com\tokonek\dashboard\CategoryTest.class
 com\tokonek\organization\CreateOrganizationsTest.class
 com\tokonek\organization\ChoseOrganizationsTest.class
+com\tokonek\dashboard\ProductTest.class
 com\tokonek\listener\ExtentReportListener.class
 com\tokonek\organization\AddOrganizationsTest.class
-com\tokonek\dashboard\inventoryTest.class
 com\tokonek\BaseTest.class
 com\tokonek\organization\OrganizationsTest.class

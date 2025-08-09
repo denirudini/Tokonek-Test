@@ -1,6 +1,6 @@
 com\tokonek\dasboard\CategoryPage.class
-com\tokonek\dasboard\InventoryPage.class
 com\tokonek\OrganizationsPage.class
 com\tokonek\App.class
 com\tokonek\CreateOrganizationPage.class
+com\tokonek\dasboard\ProductPage.class
 com\tokonek\utils\DriverUtil.class
