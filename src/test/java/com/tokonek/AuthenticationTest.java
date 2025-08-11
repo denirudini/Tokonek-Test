@@ -40,9 +40,9 @@ public class AuthenticationTest {
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         Thread.sleep(1000);
         String actual = driver.findElement(By.xpath("//div[@class='flex items-center justify-center']")).getText();
-        String expected = "Request failed";
+        String expected = "invalid credentials";
         Assert.assertEquals(actual, expected);  
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         driver.quit();
     }
     

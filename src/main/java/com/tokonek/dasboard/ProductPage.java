@@ -25,6 +25,8 @@ public class ProductPage {
     private By categoryChose = By.xpath("//button[contains(text(),'Fashion Pria')]");
     private By categoryChoseNext = By.xpath("//button[normalize-space()='Baju muslim']");
     private By deleteButton = By.xpath("//button[normalize-space()='Hapus']");
+    private By editButton = By.xpath("//button[normalize-space()='Edit']");
+
 
     private By fieldBarcode = By.xpath("//input[@id='barcode']");
 
@@ -83,5 +85,8 @@ public class ProductPage {
     }
     public void deleteButton(){
         driver.findElement(deleteButton).click();
+    }
+    public void editButton(){
+        driver.findElement(editButton).click();
     }
 }

@@ -5,6 +5,8 @@ com\tokonek\listener\ExtentReportListener.class
 com\tokonek\BaseTest.class
 com\tokonek\dashboard\product\ProductDelete.class
 com\tokonek\AuthenticationTest.class
+com\tokonek\Logout.class
+com\tokonek\dashboard\product\ProductEdit.class
 com\tokonek\organization\ChoseOrganizationsTest.class
 com\tokonek\organization\AddOrganizationsTest.class
 com\tokonek\organization\OrganizationsTest.class

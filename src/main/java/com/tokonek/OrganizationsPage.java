@@ -14,6 +14,8 @@ public class OrganizationsPage {
     private By organizationWebsiteUrl = By.xpath("//input[@id='website']");
     private By createButton = By.xpath("//button[normalize-space()='Buat Organisasi']");
     private By cancelButton = By.xpath("//button[normalize-space()='Cancel']");
+    private By profilButton = By.xpath("//div[@class='flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-blue-600']//*[name()='svg']");
+    private By logoutButton = By.xpath("//button[normalize-space()='Log Out']");
     
     public OrganizationsPage(WebDriver driver) {
         this.driver = driver;
@@ -21,6 +23,9 @@ public class OrganizationsPage {
 
     public String getCurrentUrl() {
         return driver.getCurrentUrl();
+    }
+    public void profilButton(){
+        driver.findElement(profilButton).click();
     }
 
     public void clickCreateOrganizationButton() {
@@ -53,6 +58,8 @@ public class OrganizationsPage {
     public void clickCancelButton() {
         driver.findElement(cancelButton).click();
     }
-     
+    public void logoutButton(){
+        driver.findElement(logoutButton).click();
+    }
 
 }
