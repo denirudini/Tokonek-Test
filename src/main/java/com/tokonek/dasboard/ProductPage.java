@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 public class ProductPage {
     private WebDriver driver;
     private By inventoryButton = By.xpath("//span[normalize-space()='Inventory']");
+    private By menuProductButton = By.xpath("//span[normalize-space()='Product']");
     private By addProductButton = By.xpath("//a[normalize-space()='Tambah Produk']");
     private By fieldNameProduct = By.xpath("//input[@id='name']");
     private By fieldSKUProduct = By.xpath("//input[@id='sku']");
@@ -23,6 +24,7 @@ public class ProductPage {
     private By categoryDropdown = By.xpath("//div[@class='flex items-center justify-between']");
     private By categoryChose = By.xpath("//button[contains(text(),'Fashion Pria')]");
     private By categoryChoseNext = By.xpath("//button[normalize-space()='Baju muslim']");
+    private By deleteButton = By.xpath("//button[normalize-space()='Hapus']");
 
     private By fieldBarcode = By.xpath("//input[@id='barcode']");
 
@@ -31,6 +33,9 @@ public class ProductPage {
     }
     public void clickMenuInventory(){
         driver.findElement(inventoryButton).click();
+    }
+    public void menuProductButton(){
+        driver.findElement(menuProductButton).click();
     }
     public void addProductButton(){
         driver.findElement(addProductButton).click();
@@ -76,6 +81,7 @@ public class ProductPage {
     public void fieldBarcode(String barcode){
         driver.findElement(fieldBarcode).sendKeys(barcode);
     }
-
-
+    public void deleteButton(){
+        driver.findElement(deleteButton).click();
+    }
 }

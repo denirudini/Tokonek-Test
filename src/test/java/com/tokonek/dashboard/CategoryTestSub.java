@@ -9,7 +9,7 @@ import com.tokonek.dasboard.CategoryPage;
 import com.tokonek.dasboard.ProductPage;
 import com.tokonek.utils.DriverUtil;
 
-public class CategoryTest extends BaseTest {
+public class CategoryTestSub extends BaseTest {
     private OrganizationsPage organizationsPage;
     private ProductPage inventory;
     private CategoryPage category;

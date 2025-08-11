@@ -22,8 +22,7 @@
             <class name="com.tokonek.organization.CreateOrganizationsTest"></class> -->
 
             <!-- <class name = "com.tokonek.dashboard.ProductTest"></class> -->
-
-            <class name = "com.tokonek.dashboard.CategoryTest"></class>
+            <class name = "com.tokonek.dashboard.product.ProductDelete"></class>
         </classes>       
     </test>
 </suite>
