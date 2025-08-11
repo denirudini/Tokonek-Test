@@ -1,10 +1,7 @@
 package com.tokonek.dasboard;
 
-import java.lang.reflect.Field;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class ProductPage {
     private WebDriver driver;
