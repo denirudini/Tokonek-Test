@@ -14,7 +14,6 @@ public class CategoryPage {
     private By typeCategorySub = By.xpath("//span[normalize-space()='Kategori Sub']");
     private By selectCategorySub = By.xpath("//button[normalize-space()='Select Category']");
     private By choseCategorySub = By.xpath("//button[contains(text(),'Fashion Wanita')]");
-    // private By statusCategory = By.xpath("//select[@id='isActive']");
     private By saveCategory = By.xpath("//button[normalize-space()='Tambah Kategori']");
 
     public CategoryPage(WebDriver driver){
@@ -47,8 +46,7 @@ public class CategoryPage {
     public void choseCategorySub(){
         driver.findElement(choseCategorySub).click();
     }
-
-     public void saveCategory(){
+    public void saveCategory(){
         driver.findElement(saveCategory).click();
     }
 }
