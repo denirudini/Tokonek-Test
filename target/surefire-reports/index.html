@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +103,17 @@
                     <div class="method-list-content passed suite-Test_Tokonek">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Tokonek" title="com.tokonek.Logout" class="method navigator-link" hash-for-method="choseOrganizationsTest">choseOrganizationsTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Tokonek" title="com.tokonek.dashboard.product.ProductEdit" class="method navigator-link" hash-for-method="choseOrganizationsTest">choseOrganizationsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Tokonek" title="com.tokonek.Logout" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Tokonek" title="com.tokonek.dashboard.product.ProductEdit" class="method navigator-link" hash-for-method="deleteProduct">deleteProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Tokonek" title="com.tokonek.AuthenticationTest" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Tokonek" title="com.tokonek.AuthenticationTest" class="method navigator-link" hash-for-method="testLoginWithInvalidCredentials">testLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Tokonek" title="com.tokonek.dashboard.product.ProductEdit" class="method navigator-link" hash-for-method="editInformationProduct">editInformationProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_Tokonek -->
@@ -136,29 +131,7 @@
           <div class="suite-Test_Tokonek-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.tokonek.AuthenticationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLogin">
-                  </a> <!-- testLogin -->
-                  <span class="method-name">testLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginWithInvalidCredentials">
-                  </a> <!-- testLoginWithInvalidCredentials -->
-                  <span class="method-name">testLoginWithInvalidCredentials</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Tokonek-class-passed -->
-          <div class="suite-Test_Tokonek-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.tokonek.Logout</span>
+              <span class="class-name">com.tokonek.dashboard.product.ProductEdit</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -170,9 +143,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="logout">
-                  </a> <!-- logout -->
-                  <span class="method-name">logout</span>
+                  <a name="deleteProduct">
+                  </a> <!-- deleteProduct -->
+                  <span class="method-name">deleteProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editInformationProduct">
+                  </a> <!-- editInformationProduct -->
+                  <span class="method-name">editInformationProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,14 +166,13 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;methods&quot; name=&quot;Test Tokonek&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Test Tokonek&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.tokonek.listener.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Automation Test&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Automation Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.tokonek.AuthenticationTest&quot;/&gt;
-      &lt;class name=&quot;com.tokonek.Logout&quot;/&gt;
+      &lt;class name=&quot;com.tokonek.dashboard.product.ProductEdit&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Automation Test --&gt;
 &lt;/suite&gt; &lt;!-- Test Tokonek --&gt;
@@ -207,7 +186,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Automation Test (2 classes)</span>
+                <span class="test-name">Automation Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -233,28 +212,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLogin')
-data.setCell(0, 2, 'com.tokonek.AuthenticationTest')
-data.setCell(0, 3, 7355);
+data.setCell(0, 1, 'editInformationProduct')
+data.setCell(0, 2, 'com.tokonek.dashboard.product.ProductEdit')
+data.setCell(0, 3, 18715);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLoginWithInvalidCredentials')
-data.setCell(1, 2, 'com.tokonek.AuthenticationTest')
-data.setCell(1, 3, 6395);
+data.setCell(1, 1, 'deleteProduct')
+data.setCell(1, 2, 'com.tokonek.dashboard.product.ProductEdit')
+data.setCell(1, 3, 3248);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'logout')
-data.setCell(2, 2, 'com.tokonek.Logout')
-data.setCell(2, 3, 5164);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'choseOrganizationsTest')
-data.setCell(3, 2, 'com.tokonek.Logout')
-data.setCell(3, 3, 1062);
+data.setCell(2, 1, 'choseOrganizationsTest')
+data.setCell(2, 2, 'com.tokonek.dashboard.product.ProductEdit')
+data.setCell(2, 3, 1055);
 window.suiteTableData['Test_Tokonek']= { tableData: data, tableDiv: 'times-div-Test_Tokonek'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Test_Tokonek">
               </div> <!-- times-div-Test_Tokonek -->
             </div> <!-- times-div -->
@@ -280,36 +255,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tokonek.Logout</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.tokonek.dashboard.product.ProductEdit</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">logout</span>
-                <span class="method-start">4784 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">choseOrganizationsTest</span>
-                <span class="method-start">4784 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.tokonek.AuthenticationTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testLogin</span>
-                <span class="method-start">4784 ms</span>
+                <span class="method-start">5129 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testLoginWithInvalidCredentials</span>
-                <span class="method-start">4784 ms</span>
+                <span class="method-name">deleteProduct</span>
+                <span class="method-start">6197 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.tokonek.Logout</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">editInformationProduct</span>
+                <span class="method-start">9452 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12140 ms</span>
+                <span class="method-start">28169 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

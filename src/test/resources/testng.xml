@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Tokonek" parallel="methods" thread-count="5">
+<suite name="Test Tokonek">
 <listeners>
         <listener class-name="com.tokonek.listener.ExtentReportListener"/>
     </listeners>
     <test name="Automation Test">
         <classes>
             <!-- test login positif dan negative -->
-            <class name="com.tokonek.AuthenticationTest"></class> 
-            <class name="com.tokonek.Logout"></class>
+            <!-- <class name="com.tokonek.AuthenticationTest"></class> 
+            <class name="com.tokonek.Logout"></class> -->
             <!-- test untuk pertama kali create organizatios -->
             <!-- <class name="com.tokonek.OrganizationsTest"></class>  -->z
 
@@ -23,7 +23,7 @@
 
             <!-- <class name = "com.tokonek.dashboard.ProductTest"></class> -->
             <!-- <class name = "com.tokonek.dashboard.product.ProductDelete"></class> -->
-            <!-- <class name = "com.tokonek.dashboard.product.ProductEdit"></class> -->
+            <class name = "com.tokonek.dashboard.product.ProductEdit"></class>
         </classes>       
     </test>
 </suite>

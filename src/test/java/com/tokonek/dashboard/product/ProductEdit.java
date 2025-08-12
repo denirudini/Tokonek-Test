@@ -13,8 +13,7 @@ public class ProductEdit extends BaseTest{
 
    @Test( priority = 1)
     public void choseOrganizationsTest() throws InterruptedException {
-        organizationsPage = new OrganizationsPage(DriverUtil.getDriver());
-        
+        organizationsPage = new OrganizationsPage(DriverUtil.getDriver()); 
         organizationsPage.clickChoseOrganization();
         Thread.sleep(1000); 
     }
@@ -26,12 +25,26 @@ public class ProductEdit extends BaseTest{
         inventory.menuProductButton();
         Thread.sleep(1000);
         inventory.editButton();
-        Thread.sleep(10000);
+        Thread.sleep(1000);
     }
-    // @Test (priority = 3)
-    // public void editInformationProduct() throws InterruptedException{
-    //     Thread.sleep(2000);
-    //     inventory.fieldNameProduct("Oversize Threetofour - jas hujan");
-    //     Thread.sleep(1000);
-    // }
+    @Test (priority = 3)
+    public void editInformationProduct() throws InterruptedException{
+        Thread.sleep(2000);
+        inventory.fieldNameProduct("Oversize Threetofour - kameja planel ");
+        Thread.sleep(1000);
+        inventory.fieldSKUProduct("SKU-001");
+        inventory.categoryDropdown();
+        Thread.sleep(1000);
+        inventory.categoryChose();
+        Thread.sleep(1000);
+        inventory.categoryChoseNext();
+        Thread.sleep(1000);
+        inventory.fieldDescriptionProduct("nyoba edit / update product");
+        Thread.sleep(1000);
+        inventory.fieldBarcode("barcode Qris");
+        Thread.sleep(1000);
+        inventory.buttonSaveProduct();
+        Thread.sleep(10000);
+        
+    }
 }
