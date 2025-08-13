@@ -20,13 +20,12 @@ public class DriverUtil {
             options.setExperimentalOption("prefs", prefs);
             driver = new ChromeDriver(options);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-            driver.manage().window().maximize();
-            
+            driver.manage().window().maximize();   
         }
         return driver;
     }
 
-    public WebDriver getDriverss() {
+    public WebDriver getDrivers() {
         return driver;
     }
 
