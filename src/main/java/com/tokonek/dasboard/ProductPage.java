@@ -1,6 +1,7 @@
 package com.tokonek.dasboard;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class ProductPage {
@@ -23,9 +24,10 @@ public class ProductPage {
     private By categoryChoseNext = By.xpath("//button[normalize-space()='Baju muslim']");
     private By deleteButton = By.xpath("//button[normalize-space()='Hapus']");
     private By editButton = By.xpath("//button[normalize-space()='Edit']");
-
-
+    private By searchFieldProduct = By.xpath("//input[@id='search']");
+    private By successMessageNodata = By.xpath("//td[@class='whitespace-nowrap px-6 py-4 text-center text-sm text-gray-500']");
     private By fieldBarcode = By.xpath("//input[@id='barcode']");
+    private By successMessageSearch = By.xpath("//span[@class='max-w-xs truncate']");
 
     public ProductPage(WebDriver driver) {
         this.driver = driver;
@@ -85,5 +87,16 @@ public class ProductPage {
     }
     public void editButton(){
         driver.findElement(editButton).click();
+    }
+    public void searchProduct(String productName) {
+        driver.findElement(searchFieldProduct).clear(); 
+        driver.findElement(searchFieldProduct).sendKeys(productName);
+        driver.findElement(searchFieldProduct).sendKeys(Keys.ENTER);
+    }
+    public String getSearchResultText() {
+        return driver.findElement(successMessageNodata).getText();
+    }
+    public String getSearchSucces(){
+        return driver.findElement(successMessageSearch).getText();
     }
 }

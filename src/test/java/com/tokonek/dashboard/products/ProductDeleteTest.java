@@ -1,4 +1,4 @@
-package com.tokonek.dashboard.product;
+package com.tokonek.dashboard.products;
 
 import org.testng.annotations.Test;
 
@@ -7,7 +7,7 @@ import com.tokonek.OrganizationsPage;
 import com.tokonek.dasboard.ProductPage;
 import com.tokonek.utils.DriverUtil;
 
-public class ProductDelete extends BaseTest{
+public class ProductDeleteTest extends BaseTest{
     private OrganizationsPage organizationsPage;
     private ProductPage inventory;
 

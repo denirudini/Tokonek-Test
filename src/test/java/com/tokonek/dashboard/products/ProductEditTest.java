@@ -1,33 +1,21 @@
-package com.tokonek.dashboard.product;
+package com.tokonek.dashboard.products;
 
 import org.testng.annotations.Test;
 
-import com.tokonek.BaseTest;
-import com.tokonek.OrganizationsPage;
 import com.tokonek.dasboard.ProductPage;
+import com.tokonek.dashboard.menu.MenuProduct;
 import com.tokonek.utils.DriverUtil;
 
-public class ProductEdit extends BaseTest{
-    private OrganizationsPage organizationsPage;
+public class ProductEditTest extends MenuProduct{
     private ProductPage inventory;
-
-   @Test( priority = 1)
-    public void choseOrganizationsTest() throws InterruptedException {
-        organizationsPage = new OrganizationsPage(DriverUtil.getDriver()); 
-        organizationsPage.clickChoseOrganization();
-        Thread.sleep(1000); 
-    }
-    @Test (priority = 2)
-    public void deleteProduct() throws InterruptedException{
+; 
+    @Test (priority = 1)
+    public void editProduct() throws InterruptedException{
         inventory = new ProductPage(DriverUtil.getDriver());
-        inventory.clickMenuInventory();
-        Thread.sleep(1000);
-        inventory.menuProductButton();
-        Thread.sleep(1000);
         inventory.editButton();
         Thread.sleep(1000);
     }
-    @Test (priority = 3)
+    @Test (priority = 2)
     public void editInformationProduct() throws InterruptedException{
         Thread.sleep(2000);
         inventory.fieldNameProduct("Oversize Threetofour - kameja planel ");

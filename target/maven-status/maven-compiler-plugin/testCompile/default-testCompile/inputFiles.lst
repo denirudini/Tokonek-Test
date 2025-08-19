@@ -1,9 +1,12 @@
 E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\AuthenticationTest.java
 E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\BaseTest.java
-E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\CategoryTestSub.java
-E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\product\ProductDelete.java
-E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\product\ProductEdit.java
-E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\ProductTest.java
+E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\category\CategoryTestSub.java
+E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\menu\beforetest.java
+E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\menu\MenuProduct.java
+E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\products\ProductAddTest.java
+E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\products\ProductDeleteTest.java
+E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\products\ProductEditTest.java
+E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\dashboard\products\ProductSearchTest.java
 E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\listener\ExtentReportListener.java
 E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\Logout.java
 E:\Practice Selenium\ToKonek\com.tokonek\src\test\java\com\tokonek\organization\AddOrganizationsTest.java

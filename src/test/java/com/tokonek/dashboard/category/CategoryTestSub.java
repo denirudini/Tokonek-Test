@@ -1,4 +1,4 @@
-package com.tokonek.dashboard;
+package com.tokonek.dashboard.category;
 import org.testng.annotations.Test;
 
 import com.tokonek.BaseTest;

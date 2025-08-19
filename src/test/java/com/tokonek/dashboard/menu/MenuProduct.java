@@ -1,0 +1,24 @@
+package com.tokonek.dashboard.menu;
+
+import org.testng.annotations.BeforeTest;
+
+import com.tokonek.BaseTest;
+import com.tokonek.OrganizationsPage;
+import com.tokonek.dasboard.ProductPage;
+import com.tokonek.utils.DriverUtil;
+
+public class MenuProduct extends BaseTest {
+    private OrganizationsPage organizationsPage;
+    private ProductPage inventory;
+    @BeforeTest
+    public void choseOrganizationsTest() throws InterruptedException {
+        organizationsPage = new OrganizationsPage(DriverUtil.getDriver());
+        organizationsPage.clickChoseOrganization();
+        Thread.sleep(1000);
+        inventory = new ProductPage(DriverUtil.getDriver());
+        inventory.clickMenuInventory();
+        Thread.sleep(1000);
+        inventory.menuProductButton();
+        Thread.sleep(1000);
+    }
+}

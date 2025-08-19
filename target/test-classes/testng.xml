@@ -22,8 +22,9 @@
             <class name="com.tokonek.organization.CreateOrganizationsTest"></class> -->
 
             <!-- <class name = "com.tokonek.dashboard.ProductTest"></class> -->
-            <!-- <class name = "com.tokonek.dashboard.product.ProductDelete"></class> -->
-            <class name = "com.tokonek.dashboard.product.ProductEdit"></class>
+            <!-- <class name = "com.tokonek.dashboard.products.ProductDelete"></class> -->
+            <!-- <class name = "com.tokonek.dashboard.products.ProductEdit"></class> -->
+            <class name = "com.tokonek.dashboard.products.ProductSearchTest"></class>
         </classes>       
     </test>
 </suite>
