@@ -2,8 +2,9 @@ package com.tokonek.dashboard.stock;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.tokonek.dasboard.StockPage;
-import com.tokonek.dashboard.menu.MenuStockAdjustment;
+
+import com.tokonek.dashboard.menus.MenuStockAdjustment;
+import com.tokonek.inventory.StockPage;
 import com.tokonek.utils.DriverUtil;
 
 public class StockAdjustmentTest extends MenuStockAdjustment {

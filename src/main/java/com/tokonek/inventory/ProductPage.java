@@ -1,4 +1,4 @@
-package com.tokonek.dasboard;
+package com.tokonek.inventory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

@@ -3,8 +3,8 @@ package com.tokonek.dashboard.products;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.tokonek.dasboard.ProductPage;
-import com.tokonek.dashboard.menu.MenuProduct;
+import com.tokonek.dashboard.menus.MenuProduct;
+import com.tokonek.inventory.ProductPage;
 import com.tokonek.utils.DriverUtil;
 
 public class ProductSearchTest extends MenuProduct {

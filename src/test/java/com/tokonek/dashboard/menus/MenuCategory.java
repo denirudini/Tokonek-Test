@@ -1,10 +1,10 @@
-package com.tokonek.dashboard.menu;
+package com.tokonek.dashboard.menus;
 import org.testng.annotations.BeforeTest;
 
 import com.tokonek.BaseTest;
 import com.tokonek.OrganizationsPage;
-import com.tokonek.dasboard.CategoryPage;
-import com.tokonek.dasboard.ProductPage;
+import com.tokonek.inventory.CategoryPage;
+import com.tokonek.inventory.ProductPage;
 import com.tokonek.utils.DriverUtil;
 
 public class MenuCategory extends BaseTest {

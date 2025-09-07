@@ -2,9 +2,9 @@ package com.tokonek.dashboard.category;
 import org.testng.annotations.Test;
 
 import com.tokonek.OrganizationsPage;
-import com.tokonek.dasboard.CategoryPage;
-import com.tokonek.dasboard.ProductPage;
-import com.tokonek.dashboard.menu.MenuCategory;
+import com.tokonek.dashboard.menus.MenuCategory;
+import com.tokonek.inventory.CategoryPage;
+import com.tokonek.inventory.ProductPage;
 import com.tokonek.utils.DriverUtil;
 
 public class CategoryTestSub extends MenuCategory {

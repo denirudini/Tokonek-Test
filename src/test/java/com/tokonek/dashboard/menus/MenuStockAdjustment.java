@@ -1,11 +1,11 @@
-package com.tokonek.dashboard.menu;
+package com.tokonek.dashboard.menus;
 
 import org.testng.annotations.BeforeTest;
 
 import com.tokonek.BaseTest;
 import com.tokonek.OrganizationsPage;
-import com.tokonek.dasboard.ProductPage;
-import com.tokonek.dasboard.StockPage;
+import com.tokonek.inventory.ProductPage;
+import com.tokonek.inventory.StockPage;
 import com.tokonek.utils.DriverUtil;
 
 public class MenuStockAdjustment extends BaseTest {
@@ -23,7 +23,6 @@ public class MenuStockAdjustment extends BaseTest {
         stockPage = new StockPage(DriverUtil.getDriver());
         stockPage.clickMenuStockAdjustment();
         Thread.sleep(1000);
-       
     }
 }
 

@@ -10,7 +10,7 @@
             <!-- <class name="com.tokonek.AuthenticationTest"></class> 
             <class name="com.tokonek.Logout"></class> -->
             <!-- test untuk pertama kali create organizatios -->
-            <!-- <class name="com.tokonek.OrganizationsTest"></class>  -->z
+            <!-- <class name="com.tokonek.OrganizationsTest"></class>  -->
 
             <!-- test untuk menambahkan Organizations
             <class name="com.tokonek.organization.AddOrganizationsTest"></class>  -->
@@ -20,12 +20,13 @@
             
             <!-- test untuk halaman create Organizations untuk akun pertama kali 
             <class name="com.tokonek.organization.CreateOrganizationsTest"></class> -->
-<!-- 
-            <class name = "com.tokonek.dashboard.products.ProductAddTest"></class> -->
+            <!-- <class name = "com.tokonek.dashboard.products.ProductAddTest"></class> -->
             <!-- <class name = "com.tokonek.dashboard.products.ProductDelete"></class> -->
             <!-- <class name = "com.tokonek.dashboard.products.ProductEdit"></class> -->
             <!-- <class name = "com.tokonek.dashboard.products.ProductSearchTest"></class> -->
-            <class name = "com.tokonek.dashboard.stock.StockAdjustmentTest"></class>
+            <!-- <class name = "com.tokonek.dashboard.stock.StockAdjustmentTest"></class> -->
+            <!-- <class name = "com.tokonek.Logout"></class> -->
+            <class name = "com.tokonek.dashboard.products.ProductUnitTest"></class>
         </classes>       
     </test>
 </suite>
