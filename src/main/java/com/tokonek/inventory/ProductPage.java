@@ -8,7 +8,7 @@ public class ProductPage {
     private WebDriver driver;
     private By inventoryButton = By.xpath("//span[normalize-space()='Inventory']");
     private By menuProductButton = By.xpath("//span[normalize-space()='Product']");
-    private By addProductButton = By.xpath("//a[normalize-space()='Tambah Produk']");
+    private By addProductButton = By.xpath("//button[normalize-space()='Tambah Produk']");
     private By fieldNameProduct = By.xpath("//input[@id='name']");
     private By fieldSKUProduct = By.xpath("//input[@id='sku']");
     private By fieldCategory = By.xpath("//div[@class='flex items-center justify-between']");
@@ -20,7 +20,7 @@ public class ProductPage {
     private By buttonSaveProduct = By.xpath("//button[normalize-space()='Simpan Produk']");
 
     private By categoryDropdown = By.xpath("//div[@class='flex items-center justify-between']");
-    private By categoryChose = By.xpath("//button[contains(text(),'Fashion Pria')]");
+    private By categoryChose = By.xpath("//button[contains(text(),'Oversize')]");
     private By categoryChoseNext = By.xpath("//button[normalize-space()='Baju muslim']");
     private By deleteButton = By.xpath("//button[normalize-space()='Hapus']");
     private By editButton = By.xpath("//button[normalize-space()='Edit']");
@@ -28,6 +28,7 @@ public class ProductPage {
     private By successMessageNodata = By.xpath("//td[@class='whitespace-nowrap px-6 py-4 text-center text-sm text-gray-500']");
     private By fieldBarcode = By.xpath("//input[@id='barcode']");
     private By successMessageSearch = By.xpath("//span[@class='max-w-xs truncate']");
+    private By getProductSucces = By.xpath("//div[@role='alert']");
 
     public ProductPage(WebDriver driver) {
         this.driver = driver;
@@ -98,5 +99,8 @@ public class ProductPage {
     }
     public String getSearchSucces(){
         return driver.findElement(successMessageSearch).getText();
+    }
+    public String getProductSucces() {
+        return driver.findElement(getProductSucces).getText();  
     }
 }

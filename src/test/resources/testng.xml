@@ -20,11 +20,12 @@
             
             <!-- test untuk halaman create Organizations untuk akun pertama kali 
             <class name="com.tokonek.organization.CreateOrganizationsTest"></class> -->
-
-            <!-- <class name = "com.tokonek.dashboard.ProductTest"></class> -->
+<!-- 
+            <class name = "com.tokonek.dashboard.products.ProductAddTest"></class> -->
             <!-- <class name = "com.tokonek.dashboard.products.ProductDelete"></class> -->
             <!-- <class name = "com.tokonek.dashboard.products.ProductEdit"></class> -->
-            <class name = "com.tokonek.dashboard.products.ProductSearchTest"></class>
+            <!-- <class name = "com.tokonek.dashboard.products.ProductSearchTest"></class> -->
+            <class name = "com.tokonek.dashboard.stock.StockAdjustmentTest"></class>
         </classes>       
     </test>
 </suite>

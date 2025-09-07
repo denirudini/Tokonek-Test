@@ -21,7 +21,6 @@ public class Logout extends BaseTest{
         Thread.sleep(1000);
         organizationsPage.logoutButton();
         Thread.sleep(2000);
-        
     }
 }
 

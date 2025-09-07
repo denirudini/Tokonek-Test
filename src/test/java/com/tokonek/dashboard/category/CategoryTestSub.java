@@ -1,18 +1,18 @@
 package com.tokonek.dashboard.category;
 import org.testng.annotations.Test;
 
-import com.tokonek.BaseTest;
 import com.tokonek.OrganizationsPage;
 import com.tokonek.dasboard.CategoryPage;
 import com.tokonek.dasboard.ProductPage;
+import com.tokonek.dashboard.menu.MenuCategory;
 import com.tokonek.utils.DriverUtil;
 
-public class CategoryTestSub extends BaseTest {
+public class CategoryTestSub extends MenuCategory {
     private OrganizationsPage organizationsPage;
     private ProductPage inventory;
     private CategoryPage category;
 
-     @Test( priority = 1)
+    @Test( priority = 1)
     public void choseOrganizationsTest() throws InterruptedException {
         organizationsPage = new OrganizationsPage(DriverUtil.getDriver());
         
