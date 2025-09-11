@@ -1,7 +1,6 @@
 package com.tokonek.dashboard.menus;
 
-import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.BeforeMethod;
 import com.tokonek.BaseTest;
 import com.tokonek.OrganizationsPage;
 import com.tokonek.inventory.ProductPage;
@@ -12,7 +11,7 @@ public class MenuProductUnitTest extends BaseTest {
     private OrganizationsPage organizationsPage;
     private ProductPage inventory;
     private ProductUnitPage unit;
-    @BeforeTest
+    @BeforeMethod
     public void choseOrganizationsTest() throws InterruptedException {
         organizationsPage = new OrganizationsPage(DriverUtil.getDriver());
         organizationsPage.clickChoseOrganization();

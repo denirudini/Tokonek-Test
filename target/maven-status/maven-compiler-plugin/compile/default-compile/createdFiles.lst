@@ -1,0 +1,7 @@
+com\tokonek\inventory\StockPage.class
+com\tokonek\OrganizationsPage.class
+com\tokonek\CreateOrganizationPage.class
+com\tokonek\inventory\CategoryPage.class
+com\tokonek\inventory\ProductUnitPage.class
+com\tokonek\inventory\ProductPage.class
+com\tokonek\utils\DriverUtil.class
