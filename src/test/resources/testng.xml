@@ -26,7 +26,8 @@
             <!-- <class name = "com.tokonek.dashboard.products.ProductSearchTest"></class> -->
             <!-- <class name = "com.tokonek.dashboard.stock.StockAdjustmentTest"></class> -->
             <!-- <class name = "com.tokonek.Logout"></class> -->
-            <class name = "com.tokonek.dashboard.products.ProductUnitTest"></class>
+            <!-- <class name = "com.tokonek.dashboard.products.ProductUnitTest"></class> -->
+            <class name = "com.tokonek.dashboard.products.ProductImportTest"></class>
         </classes>       
     </test>
 </suite>

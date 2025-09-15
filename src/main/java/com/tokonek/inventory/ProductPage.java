@@ -1,6 +1,13 @@
 package com.tokonek.inventory;
 
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
+import java.awt.datatransfer.StringSelection;
+import java.awt.AWTException;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -29,6 +36,9 @@ public class ProductPage {
     private By fieldBarcode = By.xpath("//input[@id='barcode']");
     private By successMessageSearch = By.xpath("//span[@class='max-w-xs truncate']");
     private By getProductSucces = By.xpath("//div[@role='alert']");
+    private By buttonImport = By.xpath("//button[normalize-space()='Import Produk']");
+    private By uploadFile = By.xpath("//div[@role='button']");
+    private By buttonImportFile = By.xpath("//button[normalize-space()='Import']");
 
     public ProductPage(WebDriver driver) {
         this.driver = driver;
@@ -103,4 +113,27 @@ public class ProductPage {
     public String getProductSucces() {
         return driver.findElement(getProductSucces).getText();  
     }
+    public void buttonImport(){
+        driver.findElement(buttonImport).click();
+    }
+    
+    public void uploadFile() throws AWTException, InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click()", driver.findElement(uploadFile));
+        StringSelection filePathSelection = new StringSelection("C:\\Users\\denir\\Downloads\\Test Case - PT XYZ.xlsx");
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePathSelection, null);
+        Robot rb = new Robot();
+        Thread.sleep(2000);
+        rb.keyPress(KeyEvent.VK_CONTROL);
+        rb.keyPress(KeyEvent.VK_V);
+        rb.keyRelease(KeyEvent.VK_V);
+        Thread.sleep(2000);
+        rb.keyPress(KeyEvent.VK_ENTER);
+        rb.keyRelease(KeyEvent.VK_ENTER);
+    }
+
+    public void importProduct(){
+        driver.findElement(buttonImportFile).click();
+    }
+
 }
